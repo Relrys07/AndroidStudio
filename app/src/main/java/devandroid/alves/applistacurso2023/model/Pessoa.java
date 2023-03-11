@@ -47,5 +47,18 @@ public class Pessoa {
     public void setCursoDesejado(String cursoDesejado) {
         this.cursoDesejado = cursoDesejado;
     }
+    
+    // to String -  para texto - para String de caractres 
+
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "primeiroNome='" + primeiroNome + '\'' +
+                ", sobreNome='" + sobreNome + '\'' +
+                ", telefoneContato='" + telefoneContato + '\'' +
+                ", cursoDesejado='" + cursoDesejado + '\'' +
+                '}';
+    }
 }
 
