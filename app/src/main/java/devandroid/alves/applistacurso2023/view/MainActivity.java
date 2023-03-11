@@ -13,6 +13,9 @@ public class MainActivity extends AppCompatActivity {
     Pessoa pessoa;
     Pessoa outraPessoa;
 
+    String dadosPessoa; //passcalCase - camelCase
+    String dadosOutraPessoa;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         //Atribuir conteúdo Dados ,valpres para objetos
         pessoa.setPrimeiroNome("Relrys");
         pessoa.setSobreNome("Alves");
-        pessoa.setTelefoneContato("85 8597854");
+        pessoa.setTelefoneContato("858597854");
         pessoa.setCursoDesejado("Android");
 
         outraPessoa =  new Pessoa();
@@ -31,8 +34,24 @@ public class MainActivity extends AppCompatActivity {
         outraPessoa.setTelefoneContato("85486514156");
         outraPessoa.setCursoDesejado("java");
 
+        dadosPessoa = " Primeiro nome: ";
+        dadosPessoa += pessoa.getPrimeiroNome();
+        dadosPessoa += " Sobrenome: ";
+        dadosPessoa += pessoa.getSobreNome();
+        dadosPessoa += " Telefone Contato: ";
+        dadosPessoa += pessoa.getTelefoneContato();
+        dadosPessoa += " Curso Desejado: ";
+        dadosPessoa += pessoa.getCursoDesejado();
 
-        int parada = 0;
+        dadosOutraPessoa = " Primeiro nome: ";
+        dadosOutraPessoa += outraPessoa.getPrimeiroNome();
+        dadosOutraPessoa += " Sobrenome: ";
+        dadosOutraPessoa += outraPessoa.getSobreNome();
+        dadosOutraPessoa += " Telefone Contato: ";
+        dadosOutraPessoa += outraPessoa.getTelefoneContato();
+        dadosOutraPessoa += " Curso Desejado: ";
+        dadosOutraPessoa += outraPessoa.getCursoDesejado();
 
+        int parado = 0;
     }
 }
