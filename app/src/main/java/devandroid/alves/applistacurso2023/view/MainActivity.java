@@ -3,6 +3,7 @@ package devandroid.alves.applistacurso2023.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import devandroid.alves.applistacurso2023.R;
 import devandroid.alves.applistacurso2023.model.Pessoa;
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         dadosOutraPessoa += " Curso Desejado: ";
         dadosOutraPessoa += outraPessoa.getCursoDesejado();
 
-        int parado = 0;
+        Log.i("PooAndroid","Objetos paessoa: "+pessoa.toString());
+        Log.i("PooAndroid","Objetos outraPaessoa: "+outraPessoa.toString());
     }
 }
